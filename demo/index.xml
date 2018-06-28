@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="../demo.xsl"?>
+<root>
+    <env>
+        <domain>local</domain>
+    </env>
+    <login>
+        <uid>git/wurui</uid>
+        <nick></nick>
+    </login>
+    <p>
+        <title>demo page</title>
+        <desc>this is deme page</desc>
+        <owner>openxsl</owner>
+        <icon>//oxm1.cc/img/app_default.png</icon>
+    </p>
+    <data>
+    <user-ext ADAPTERID="25b2c642dba7a53491ca03248">
+        <i>
+            <_id>5b2c642dba7a53491ca03247</_id>
+            <slogan>我们掌握着改变世界的力量</slogan>
+            <sex>X</sex>
+            <img>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sg4Tizdxut9oRw8uxC3pm.jpg</img>
+            <uid>git/wurui</uid>
+            <avatar>http://i.oxm1.cc/uploads/git/wurui/img/2ajyf6sh3Tizdxut8pRxh09Rq69.jpg</avatar>
+            <nick>wurui</nick>
+        </i>
+    </user-ext>
+    </data>
+</root>

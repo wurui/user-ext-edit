@@ -6,7 +6,7 @@
     <html env="{env/domain}" uid="{login/uid}">
       <head>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
-        <title>user-ext-edit - DEMO</title>
+        <title><xsl:value-of select="p/title"/></title>
         <link rel="stylesheet" type="text/css" href="https://a.oxm1.cc/css/ea.css" />
         <link rel="stylesheet" type="text/css" href="../asset/index.css?{generate-id(.)}" />
         <script src="https://l.oxm1.cc/3rd/require.js"></script>

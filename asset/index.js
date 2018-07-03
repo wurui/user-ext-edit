@@ -50,7 +50,7 @@ define(['require','oxjs'],function(require,OXJS){
 	    			}
     			}
     			if(f.uid.value){
-    				data.$updater='update_all'
+    				data['user-ext'].$updater='update_all'
     				$mod.OXPut(data)
 
     			}else{

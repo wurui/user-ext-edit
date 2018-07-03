@@ -37,6 +37,10 @@ define(['require','oxjs'],function(require,OXJS){
     		}
     	}).on('submit',function(e){
     		var f=e.target;
+    		var backpage=$('#J_referer').val(),
+    		cb=function(){
+    			location.href=backpage;
+    		};
     		try{
 
     			var data={
@@ -51,10 +55,10 @@ define(['require','oxjs'],function(require,OXJS){
     			}
     			if(f.uid.value){
     				data['user-ext'].$updater='update_all'
-    				$mod.OXPut(data)
+    				$mod.OXPut(data,cb)
 
     			}else{
-    				$mod.OXPost(data)
+    				$mod.OXPost(data,cb)
     			}
     			
     		}catch(er){

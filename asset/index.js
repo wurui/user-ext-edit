@@ -38,14 +38,19 @@ define(['require','oxjs'],function(require,OXJS){
     	}).on('submit',function(e){
     		var f=e.target;
     		var backpage=$('#J_referer').val(),
+    		uid=OXJS.getUID(),
     		cb=function(){
     			location.href=backpage;
     		};
+    		if(!uid){
+    			OXJS.gotoLogin();
+    			return false
+    		}
     		try{
 
     			var data={
     				'user-ext':{
-	    				uid:OXJS.getUID(),
+	    				uid:uid,
 	    				avatar:dataCache.file_avatar && dataCache.file_avatar.src,
 	    				img:dataCache.file_img && dataCache.file_img.src,
 	    				slogan:f.slogan.value,
